@@ -1,6 +1,6 @@
-   import type { Metadata } from "next";
+import type { Metadata } from "next";
 import "./globals.css";
-import { ThemeProvider } from "next-themes";
+import { Providers } from "./Provider";
 import { Inter } from "next/font/google";
 
 // const inter = Inter({ subsets: ["latin"] });
@@ -25,9 +25,9 @@ export default function RootLayout({
       <body
         className={`${inter.variable} antialiased`}
       >
-        <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
+        <Providers>
           {children}
-        </ThemeProvider>
+        </Providers>
       </body>
     </html>
   );

@@ -21,7 +21,7 @@ export const navlink1 = {
 export const navlink2 = {
    box: <BiSolidInbox />,
    earpieces: <BiSupport />,
-   alarm: <BiSolidBell />,
+   alarm: <BiSolidBell />
 }
 
 export const featuredata = [
